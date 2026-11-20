@@ -1,7 +1,7 @@
 # A quest id appended once
 
 **Trust label:** `educational-reference`  
-**Catalog:** [wax-ecosystem-blueprint-catalog](https://github.com/pixel-journey/wax-ecosystem-blueprint-catalog)
+**Catalog:** `wax-ecosystem-blueprint-catalog` (private index; not this public course)
 
 quest-2 follows quest-1. A repeat is refused. No quest contract is called.
 
