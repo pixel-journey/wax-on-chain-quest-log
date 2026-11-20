@@ -47,6 +47,15 @@ Unlike the credential issuer, **20 cannot accept one more**. The credential lab 
 
 Order is preserved: append goes to the end. Completeness is string equality, not a sorted set.
 
+### Attack → test
+
+| Attack | Lab behavior |
+| --- | --- |
+| Repeat id | already complete |
+| 21st append | hard stop |
+| `Quest-1` uppercase | refused |
+| Id length 33 | refused |
+
 ---
 
 ## Masterclass
@@ -58,17 +67,11 @@ Order is preserved: append goes to the end. Completeness is string equality, not
 3. Soft-capping at 20 by silently dropping the 21st. This lab refuses.  
 4. Confusing id completion with lesson readiness (that is the learning-path visualizer).
 
-### What this is not
-
-- An AtomicAssets or quest-contract write
-- Proof the player finished content
-- A leaderboard
-
 ### Exercises
 
-1. Log `["quest-1"]`, complete `quest-1` again — reason?  
-2. Twenty ids, then `quest-x` — ok? (No.)  
-3. Max id length? (32.)
+1. Log `["quest-1"]`, complete `quest-1` again — reason? (`already complete`.)  
+2. Twenty ids, then `quest-x` — ok? (**No**.)  
+3. Max id length? (**32**.)
 
 ---
 
